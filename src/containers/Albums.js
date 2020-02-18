@@ -11,7 +11,7 @@ class Albums extends React.Component {
   componentDidMount = async () => {
     try {
       const response = await axios.get(
-        'http://spotify-ruddy.netlify.com/found_artist_album?id=' +
+        'http://localhost:3001/found_artist_album?id=' +
           this.props.match.params.ArtistId
       )
 

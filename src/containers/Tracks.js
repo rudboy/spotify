@@ -8,7 +8,7 @@ class Tracks extends React.Component {
   componentDidMount = async () => {
     try {
       const response = await axios.get(
-        'http://spotify-ruddy.netlify.com/get_album_tracks?id=' +
+        'http://localhost:3001/get_album_tracks?id=' +
           this.props.match.params.AlbumId
       )
       this.setState({ tabTracks: response.data.items })
