@@ -1,0 +1,161 @@
+.media-container {
+  padding: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: 0.2rem;
+}
+body {
+  background-color: black;
+}
+.mr-3 {
+  height: 90px;
+  width: 90px;
+  object-fit: contain;
+}
+#active {
+  color: #54b352;
+  background-color: white;
+}
+.breadcrumb {
+  margin-top: 50px;
+}
+.breadcrumb-item a:hover {
+  text-decoration: none;
+  color: rgb(49, 47, 47);
+}
+.container {
+  background-color: black;
+}
+h1 {
+  color: white;
+}
+h2 {
+  color: lightgray;
+}
+.logo {
+  height: 200px;
+  width: 320px;
+  object-fit: contain;
+}
+.logo_album {
+  margin-top: 20px;
+  margin-bottom: -30px;
+  height: 50px;
+  width: 110px;
+  object-fit: contain;
+}
+.panel-heading {
+  color: white;
+}
+.container_logo {
+  display: flex;
+  justify-content: center;
+}
+.btn-success {
+  background-color: #54b352;
+}
+.page-link {
+  width: 150px;
+  background-color: rgb(236, 234, 234);
+}
+.text-center {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.mt-0 {
+  color: white;
+}
+.media-body {
+  color: darkgray;
+  font-size: 12px;
+}
+.mt-1 {
+  width: 90px;
+}
+.btn-outline-success {
+  color: white;
+}
+.zoom-img {
+  margin-top: -100px;
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+  z-index: 1px;
+  position: absolute;
+}
+.artists {
+  display: flex;
+  flex-direction: row;
+}
+.media {
+  height: 120px;
+}
+.card {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-text {
+  text-decoration: none;
+  color: rgb(49, 47, 47);
+}
+.card:hover {
+  text-decoration: none;
+}
+.badge {
+  font-size: 15px;
+}
+.thumbnail {
+  height: 540px;
+  width: 540px;
+  object-fit: contain;
+}
+.not_found {
+  color: darkgray;
+  margin-top: 20px;
+}
+@media (max-width: 780px) {
+  .logo {
+    height: 100px;
+    width: 220px;
+    object-fit: contain;
+  }
+  .artists {
+    display: flex;
+    flex-direction: column;
+  }
+  .zoom-img {
+    margin-top: -500px;
+    margin-left: 300px;
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    z-index: 1px;
+    position: absolute;
+  }
+}
+@media (max-width: 580px) {
+  .logo {
+    height: 80px;
+    width: 200px;
+    object-fit: contain;
+  }
+  .artists {
+    display: flex;
+    flex-direction: column;
+  }
+  .zoom-img {
+    margin-top: -500px;
+    margin-left: 300px;
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    z-index: 1px;
+    position: absolute;
+  }
+  .btn-success {
+    margin-top: -17px;
+  }
+}
