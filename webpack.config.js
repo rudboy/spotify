@@ -2,12 +2,12 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
-const outputDirectory = 'dist'
+const outputDirectory = 'build'
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, outputDirectory),
+    path: path.resolve(__dirname, outputDirectory),
     filename: 'bundle.js',
   },
   module: {
@@ -30,6 +30,7 @@ module.exports = {
     ],
   },
   devServer: {
+    contentBase: './build',
     port: 8080,
     open: true,
     historyApiFallback: true,
