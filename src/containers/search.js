@@ -41,7 +41,7 @@ class Search extends React.Component {
   foundArtiste = async artiste => {
     try {
       const response = await axios.get(
-        'http://localhost:3001/search_artiste?name=' + artiste
+        'http://spotify-ruddy.netlify.com/search_artiste?name=' + artiste
       )
       this.setState({
         artistsTab: response.data.artists.items,
@@ -69,7 +69,7 @@ class Search extends React.Component {
   next = async () => {
     try {
       const response = await axios.get(
-        'http://localhost:3001/next?url=' + this.state.next
+        'http://spotify-ruddy.netlify.com/next?url=' + this.state.next
       )
       this.setState({
         artistsTab: response.data.artists.items,
@@ -81,7 +81,7 @@ class Search extends React.Component {
   previous = async () => {
     try {
       const response = await axios.get(
-        'http://localhost:3001/previous?url=' + this.state.previous
+        'http://spotify-ruddy.netlify.com/previous?url=' + this.state.previous
       )
       this.setState({
         artistsTab: response.data.artists.items,
